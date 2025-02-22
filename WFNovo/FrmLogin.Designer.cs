@@ -1,6 +1,6 @@
 ﻿namespace WFNovo
 {
-    partial class Form1
+    partial class FrmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,9 +30,9 @@
         {
             Username = new Label();
             Password = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            Login2 = new Button();
+            txtUserName = new TextBox();
+            txtPassword = new TextBox();
+            btnLogin = new Button();
             SuspendLayout();
             // 
             // Username
@@ -40,53 +40,54 @@
             Username.AutoSize = true;
             Username.Location = new Point(60, 75);
             Username.Name = "Username";
-            Username.Size = new Size(65, 15);
+            Username.Size = new Size(63, 15);
             Username.TabIndex = 3;
-            Username.Text = "User Name";
+            Username.Text = "Username:";
             // 
             // Password
             // 
             Password.AutoSize = true;
             Password.Location = new Point(60, 122);
             Password.Name = "Password";
-            Password.Size = new Size(57, 15);
+            Password.Size = new Size(60, 15);
             Password.TabIndex = 4;
-            Password.Text = "Password";
+            Password.Text = "Password:";
             // 
-            // textBox1
+            // txtUserName
             // 
-            textBox1.Location = new Point(148, 75);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 5;
+            txtUserName.Location = new Point(148, 75);
+            txtUserName.Name = "txtUserName";
+            txtUserName.Size = new Size(100, 23);
+            txtUserName.TabIndex = 5;
             // 
-            // textBox2
+            // txtPassword
             // 
-            textBox2.Location = new Point(148, 119);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 6;
+            txtPassword.Location = new Point(148, 119);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(100, 23);
+            txtPassword.TabIndex = 6;
             // 
-            // Login2
+            // btnLogin
             // 
-            Login2.Location = new Point(159, 160);
-            Login2.Name = "Login2";
-            Login2.Size = new Size(75, 23);
-            Login2.TabIndex = 7;
-            Login2.Text = "Login";
-            Login2.UseVisualStyleBackColor = true;
+            btnLogin.Location = new Point(159, 160);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 7;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // Form1
+            // FrmLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(286, 255);
-            Controls.Add(Login2);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(txtUserName);
             Controls.Add(Password);
             Controls.Add(Username);
-            Name = "Form1";
+            Name = "FrmLogin";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
@@ -95,8 +96,8 @@
         #endregion
         private Label Username;
         private Label Password;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button Login2;
+        private TextBox txtUserName;
+        private TextBox txtPassword;
+        private Button btnLogin;
     }
 }
